@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif
+}
+
+a {
+    text-decoration: none
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+body {
+    background-color: #202928;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.title {
+    color:#ff847c;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.title-wrap {
+    padding: 20px 0px;
+}
+.input {
+    padding: 15px;
+}
+
+.input-normal {
+    padding: 10px 20px;
+    background: #82CFD0;
+    border: 3px solid #ff847c;
+}
+.input-normal:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.input-range {
+    width: 190px;
+    background: #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    outline: none;
+    -webkit-appearance: none;
+}
+.result-item {
+    text-align: center;
+}
+.calculator-body {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.bank {
+    margin: 20px 0px;
+    background: #ff847c;
+    border: 3px solid #82CFD0;
+    color: white;
+    text-transform: uppercase;
+}
+.active {
+    background: #82CFD0;
+    border: 3px solid white;
+}
+
+.results-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.result-item {
+    padding: 30px 0px;
+}
+.calculator-body {
+    padding-top: 30px;
+}
+.value {
+    font-weight: 700;
+}
