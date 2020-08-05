@@ -7,69 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Calculator epta </h1>
-    <div class="form">
-        <div class="input-wrap">
-            <div class="title">Price of something</div>
-            <div class="input">
-                <input type="number" class="input-normal" id="total-cost" value="0">
+    <h1>Goose slider</h1>
+    <div class="flex-wrapper">
+        <div class="slider-wrapper">
+            <div class="slide active">
+                <img src="/img/jeka_1.jpg" class="img-fluid" alt="">
             </div>
-            <div class="input">
-                <input type="range" min="0" max="10000000" id="total-cost-range" class="input-range" value="0">
+            <div class="slide">
+                <img src="/img/jeka_2.jpg" class="img-fluid" alt="">
             </div>
+            <div class="slide">
+                <img src="/img/jeka_1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/bg-moods-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/bg-moods-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div id="btn-prev" class="slider-btn-l"><img src="./img/arrow-l.png" alt=""></div>
+            <div id="btn-next" class="slider-btn-r"><img src="./img/arrow-r.png" alt=""></div>
         </div>
-        <div class="input-wrap">
-            <div class="title">First contribution</div>
-            <div class="input">
-                <input type="number" class="input-normal" id="an-initial-fee" value="0">
-            </div>
-            <div class="input">
-                <input type="range" min="100000" max="1000000" class="input-range" id="an-initial-fee-range" value="0">
-            </div>
-        </div>
-        <div class="input-wrap">
-            <div class="title">Term of credit</div>
-            <div class="input">
-                <input type="number" class="input-normal" id="credit-term" value="0">
-            </div>
-            <div class="input">
-                <input type="range" min="1" max="20" id="credit-term-range" class="input-range" value="0">
-            </div>
-        </div>
-    </div>
-    <div class="results-body">
-        <div class="calculator-body">
-            <h2 class="title-wrap">Choose your bank</h2>
-            <button data-name="dimasbank" class="bank active">
-                <div class="text">Dimas Bank</div>
-                <div class="value">8,6%</div>
-            </button>
-            <button data-name="denisbank" class="bank">
-                <div class="text">Denis Bank</div>
-                <div class="value">8,3%</div>
-            </button>
-            <button data-name="mashabank" class="bank">
-                <div class="text">Masha Bank</div>
-                <div class="value">8,9%</div>
-            </button>
-            <button data-name="jekabank" class="bank">
-                <div class="text">Jeka Bank</div>
-                <div class="value">9,7%</div>
-            </button>
-        </div>
-        <div class="results">
-            <div class="result-item">
-                <div class="title">Amount of credit</div>
-                <div class="value" id="amount-of-credit">0$</div>
-            </div>
-            <div class="result-item">
-                <div class="title">Monthly payment</div>
-                <div class="value" id="monthly-payment">0$</div>
-            </div>
-            <div class="result-item">
-                <div class="title">Recomended income</div>
-                <div class="value" id="recomended-income">0$</div>
-            </div>
+        <div class="dots-wrapper">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </div>
     <script src="js/script.js"></script>
