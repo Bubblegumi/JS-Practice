@@ -15,10 +15,15 @@ body {
     color:white;
     background: #021515;
 }
+.goose-bg {
+    background: url('/img/duck.png');
+    width: 20px;
+    height: 20px;
+}
 h1 {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 20px; 
+    padding-top: 50px; 
 }
 .img-fluid {
     max-width: 700px;
@@ -28,6 +33,7 @@ h1 {
 .slider-wrapper {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .slide {
     display: none;
@@ -37,19 +43,6 @@ h1 {
     display: block;
 }
 
-.dots-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-}
-.dot {
-    background: white;
-    border: 1px solid #3685fc;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
 .slider-btn-l {
     top: 50%;
     left: 23%;
@@ -60,6 +53,57 @@ h1 {
     right: 23%;
     position: absolute;
 }
-.dot.active {
-    background: #3685fc;
+.arrow {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+.arrow:hover {
+    width: 150px;
+    height: 150px;
+    transition: ease 1s;
+    border-bottom: 3px solid orange;
+}
+.goose {
+    transform: scale(-1, 1)
+}
+.text-desc{
+    display: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text-desc.active {
+    display: block;
+}
+.descrtion-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background: orange;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+
+.duck {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease 0.4s;
+}
+
+.duck:hover, :focus {
+    width: 30%;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
