@@ -29,6 +29,7 @@ body {
     background-color: #202928;
     color: white;
     letter-spacing: 2px;
+    transition: all ease 1s;
 }
 
 .form {
@@ -104,4 +105,129 @@ body {
 }
 .value {
     font-weight: 700;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    font-size: 0px;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    background: aliceblue;
+}
+
+.burger:focus {
+    outline: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: 18px;
+    right: 18px;
+    bottom: 30px;
+    background-color: orange;
+}
+
+.burger span::before, .burger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: orange;
+    content:'';
+}
+
+.burger span::before {
+    top: -15px
+}
+
+.burger span::after {
+    bottom: -15px;
+} 
+
+.burger {
+    background: white;
+}
+
+.burger-line {
+    background: aliceblue;
+
+}
+
+.burger-line span {
+    transition: background 0s 0.3s;
+
+}
+
+.burger-line span::before, .burger-line span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0.3s;
+}
+
+.burger-line span::before {
+    transition-property: top, transform;
+}
+
+.burger-line span::after {
+    transition-property: bottom, transform;
+}
+
+.burger-line.is-active {
+    background: yellow;
+}
+
+.burger-line.is-active span {
+    background: none;
+}
+
+.burger-line.is-active span::before {
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+.burger-line.is-active span::after {
+    bottom: 0px;
+    transform: rotate(45deg);
+}
+
+.burger-line.is-active span::before, .burger-line.is-active span::after {
+    transition-delay: 0s 0.3s;
+}
+
+#menu {
+    width: 280px;
+    margin-left: -200px;
+    background-color: rosybrown;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease 1s;
+    z-index: 999;
+}
+
+.menu__container {
+    width: 80%;
+    min-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.body-active {
+    margin-left: 300px;
+}
+
+#menu.nav-active {
+    margin-left: 0;
 }
